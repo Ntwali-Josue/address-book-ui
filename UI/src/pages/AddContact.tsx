@@ -69,6 +69,8 @@ const NewContact: React.FC = () => (
             </IonItem>
           </IonItemGroup>
         </IonList>
+
+        <IonButton className="ion-margin-top"> Done</IonButton>
       </form>
     </IonContent>
   </IonPage>
