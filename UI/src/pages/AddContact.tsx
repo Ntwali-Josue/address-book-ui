@@ -38,16 +38,28 @@ const NewContact: React.FC = () => (
             <IonLabel position="floating">Last Name </IonLabel>
             <IonInput type="text" required></IonInput>
           </IonItem>
-          <IonItem>
-            <IonLabel position="floating">email </IonLabel>
-            <IonInput type="email" required></IonInput>
-          </IonItem>
+          
           <IonItemGroup>
             <IonItem>
-              <IonButton slot="start" size="small" color="danger"  >
+              <IonLabel position="floating">email </IonLabel>
+              <IonButton slot="start" size="small" color="danger" className="ion-float-left ion-margin-top"  >
                 <IonIcon slot="icon-only" icon={remove} color="light" />
               </IonButton>
-              <IonInput required></IonInput>
+              <IonInput required type="email"></IonInput>
+            </IonItem>
+            <IonItem>
+              <IonButton fill="clear">
+                <IonIcon icon={add} slot="icon-only" />
+                Add Email
+              </IonButton>
+            </IonItem>
+
+            <IonItem>
+              <IonLabel position="floating">phone </IonLabel>
+              <IonButton slot="start" size="small" color="danger" className="ion-float-left ion-margin-top"  >
+                <IonIcon slot="icon-only" icon={remove} color="light" />
+              </IonButton>
+              <IonInput required type="email"></IonInput>
             </IonItem>
             <IonItem>
               <IonButton fill="clear">
