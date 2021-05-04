@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {IonHeader, IonPage, IonToolbar } from '@ionic/react';
+import {IonHeader,IonButton, IonPage, IonToolbar, IonIcon, IonBackButton, } from '@ionic/react';
 
 
 const NewContact: React.FC = () => (
@@ -8,7 +8,9 @@ const NewContact: React.FC = () => (
     <IonPage>
         <IonHeader>
             <IonToolbar>
-
+            <IonButton fill="outline">
+            <IonBackButton defaultHref="/" />
+            </IonButton>
             </IonToolbar>
         </IonHeader>
     </IonPage>
